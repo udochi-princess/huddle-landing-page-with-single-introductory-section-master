@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: brown;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+.container {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: row;
+  /* height: 500px; */
+  /* width: 100%; */
+  /* flex-wrap: wrap; */
+}
+.right-div {
+  background-color: aquamarine;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 5rem;
+  /* display: flex;
+  flex-direction: row; */
+}
+.left-div {
+  background-color: magenta;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.image1 {
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.image2 {
+  width: 500px;
+  height: 400px;
+}
+.heading {
+  font-family: "Poppins";
+}
+.description {
+  font-family: "Open Sans";
+  font-size: 13px;
+}
+#register {
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  height: 40px;
+  width: 150px;
+  /* text-align: justify; */
+  background: hsl(300, 69%, 71%);
+  border-radius: 100px;
+  border: none;
+  box-shadow: 4px 4px 6px hsl(300, 9%, 44%);
+}
