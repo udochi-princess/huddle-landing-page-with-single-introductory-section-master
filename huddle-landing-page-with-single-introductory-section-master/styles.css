@@ -3,57 +3,141 @@
   margin: 0;
 }
 body {
-  background-color: brown;
-  width: 100%;
+  /* background-color: brown; */
+  width: 100vw;
+  height: 100vh;
+  /* padding: 2rem; */
   /* flex-wrap: wrap; */
+  background: url("./images/bg-desktop.svg") hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* color: blueviolet; */
+  overflow-y: scroll;
+  /* background-color: orange; */
 }
 .container {
   /* background-color: yellow; */
   display: flex;
   flex-direction: row;
   /* height: 500px; */
-  /* width: 100%; */
+  width: 100%;
   /* flex-wrap: wrap; */
+  @media (max-width: 769px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  @media (max-width: 426px) {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
 }
 .right-div {
-  background-color: aquamarine;
-  width: 50%;
+  /* background-color: aquamarine; */
+  width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 5rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* margin: 10px; */
+  padding: 5rem 1rem;
   /* display: flex;
   flex-direction: row; */
+  @media (max-width: 769px) {
+    width: 100%;
+    /* font-size: 15px; */
+    padding: 0;
+    /* margin: 0 15px; */
+  }
+  @media (max-width: 426px) {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 2rem 0; */
+    padding: 0;
+    margin: 15px 0;
+    width: 100%;
+  }
 }
 .left-div {
-  background-color: magenta;
-  width: 50%;
+  /* background-color: magenta; */
+  width: 60%;
+  height: 230px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 5rem;
+  /* margin: 7px; */
+  padding: 5rem 0;
   align-items: center;
   justify-content: center;
+  @media (max-width: 769px) {
+    width: 100%;
+  }
+  @media (max-width: 426px) {
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
 }
 .image1 {
-  background-color: tomato;
+  /* background-color: tomato; */
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: start;
   justify-content: flex-start;
+  padding-left: 4rem;
+  @media (max-width: 769px) {
+    padding: 2rem 2rem;
+  }
+  @media (max-width: 426px) {
+    /* background-color: sienna; */
+    height: 20pt;
+    width: 100;
+    padding: 1rem 0;
+  }
 }
 .image2 {
   width: 500px;
   height: 400px;
+  @media (max-width: 426px) {
+    width: 300px;
+    height: 200px;
+  }
 }
 .heading {
   font-family: "Poppins";
+  margin-bottom: 10px;
+  color: white;
+  @media (max-width: 769px) {
+    font-size: 25px;
+    padding: 0 1rem;
+  }
+  @media (max-width: 426px) {
+    font-size: 20px;
+    padding: 0 1rem;
+    text-align: center;
+  }
 }
+
 .description {
   font-family: "Open Sans";
   font-size: 13px;
+  color: rgb(216, 203, 203);
+  @media (max-width: 769px) {
+    font-size: 20px;
+    padding: 1rem;
+  }
+  @media (max-width: 426px) {
+    text-align: center;
+    font-size: 15px;
+    padding: 1rem;
+  }
 }
 #register {
   /* display: flex;
@@ -61,9 +145,40 @@ body {
   align-items: flex-start; */
   height: 40px;
   width: 150px;
+  margin: 15px 0;
   /* text-align: justify; */
   background: hsl(300, 69%, 71%);
   border-radius: 100px;
   border: none;
   box-shadow: 4px 4px 6px hsl(300, 9%, 44%);
+  @media (max-width: 769px) {
+    margin: 0 15px;
+  }
+  @media (max-width: 426px) {
+    background-color: whitesmoke;
+    box-shadow: none;
+    height: 30px;
+    width: 200px;
+    color: rgb(232, 182, 232);
+    /* padding: 0; */
+  }
+}
+.attribution {
+  /* background-color: aqua; */
+  /* height: 20px; */
+  text-align: end;
+  padding-right: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  @media (max-width: 426px) {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+.attribution a {
+  color: hsl(228, 71%, 99%);
+  text-decoration: none;
 }
